@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="bg-blue-800 text-white p-5 flex flex-wrap gap-5 md:gap-10 items-center">
+        <img src="tailwind.png" class="w-10" alt="Tailwinds logotyp">
+        <a href="index.html">Start</a>
+        <a href="tailwind.html" class="font-semibold">Tailwind</a>
+        <a href="bootstrap.html">Bootstrap</a>
+        <a href="publicering.html">Publicering</a>
+    </nav>
+    <main class="max-w-225 mx-auto px-5"> <!--Centrerar innehållet och max-bredd, lite luft på sidan också-->
+    <h1 class="text-blue-800 text-3xl font-semibold md:text-6xl mb-10 mt-10">Tailwind CSS</h1>
+    <div>
+        <h2 class="text-2xl">Om Tailwind-ramverket</h2>
+    <p>Tailwind är ett så kallat open source-ramverk som underlättar för utvecklare att enklare och snabbare 
+        lägga en stil på sin webbplats. Som utvecklare behöver man inte skriva all CSS själv och man använder färdiga CSS-klasser
+    direkt i HTML-koden som man har och Tailwind är även bra på responsiv design. Genom att använda sig av 
+    klasserna kan man i HTML-kodens element skriva Tailwinds CSS-kod på samma rad.
+Det kan exempelvis se ut såhär:</p><br>
+<p class="font-bold">&lt;h1 class="text-blue-300 text-3xl font-semibold"&gt;Hej&lt;/h1&gt;</p><br> <!--Behövde skriva så för att koden inte skulle tolkas som 
+att jag vill skriva en h1-->
+<p>Där betyder text-blue-300 att texten ska vara ljusblå, storlek 3xl och halvfet text. Resultatet blir således:</p>
+<h1 class="text-blue-300 text-3xl font-semibold">Hej</h1><br>
+<p>Du når Tailwinds webbplats på <a href="https://tailwindcss.com/" class="underline">denna länk</a></p><br>
+      
+        <h3 class="text-2xl">Min utvärdering</h3>
+        <p>Detta är första gången jag använder mig av ett ramverk, även om jag känner till begreppet sedan någon
+            av kurserna under läsår 1 i webbutvecklingsprogrammet. Efter att ha följt Malins genomgång har jag lyckats komma
+            igång med Tailwind och utforska flera av dess class-funktioner för att enkelt styla min webbplats.
+        </p><br>
+        <h2 class="text-2xl">Fördelar</h2>
+        <p>Efter att ha tittat på några föreläsningar och även läst på om Tailwind på nätet, har jag velat testa det i praktikten.
+            Jag märkte då hur otroligt användbart det känns i första anblick, och även om det är en del kodande, kommer man hyfsat lätt in
+            i det. Det har tagit bara några timmar att starta upp detta projekt och skriva om och med Tailwind-kod, då det även är viktigt
+            att förstå vad man gör.
+        </p><br>
+        <h2 class="text-2xl">Nackdelar</h2>
+        <p>En nackdel jag stött på är att CSS-koden verkar vara "nollställd", det vill säga att en h1, h2 och h3 inte har den storleken
+            jag är van vid som när jag använder normal CSS. För semantikens skull använder jag ändå strukturen, men det är lite jobbigt att
+            vid varje gång behöva skriva textstorleken och -tjockleken för rubrikerna. En annan nackdel, eller snarare utmaning, är att lära sig alla kommando. Även
+            om det går snabbare och är smidigare med kortare texter att skriva, exempelvis att p står för padding och m för marginal, så har det
+            inte varit lätt att veta vad allt betyder. Med det sagt, upplever jag att Tailwind har en bra hemsida som hjälpt mig med allt detta.
+        </p><br>
+        <h3 class="text-2xl">Tabell</h3>
+        <p>Tabellen nedan visar några av de låtar som spelats upp hemma under detta år. Då jag har en läs- och skrivkunnig sjuåring och
+            en treåring som vet hur man flirtar till sig sin favoritmusik, så speglar inte nedan lista helt min egen musiksmak.
+        </p><br>
+        <div class="overflow-x-auto">
+        <table class="table-auto w-full max-w-225">
+  <thead>
+    <tr>
+      <th class="py-2 text-left">Artist</th>
+      <th class="py-2 text-left">Låt</th>
+      <th class="py-2 text-left">Genre</th>
+      <th class="py-2 text-left">Årtal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border px-4 py-2">Brandsta city släckers</td>
+      <td class="border px-4 py-2">Rakt in i elden</td>
+      <td class="border px-4 py-2">Schlagerpop</td>
+      <td class="border px-4 py-2">2026</td>
+    </tr>
+    <tr class="bg-gray-100">
+      <td class="border px-4 py-2">Shakira</td>
+      <td class="border px-4 py-2">Dai Dai</td>
+      <td class="border px-4 py-2">Afrobeat</td>
+      <td class="border px-4 py-2">2026</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">Gener8ion & Yung learn</td>
+      <td class="border px-4 py-2">Storm II</td>
+      <td class="border px-4 py-2">Alternative</td>
+      <td class="border px-4 py-2">2026</td>
+    </tr>
+     <tr class="bg-gray-100">
+      <td class="border px-4 py-2">Felicia</td>
+      <td class="border px-4 py-2">My system</td>
+      <td class="border px-4 py-2">Pop</td>
+      <td class="border px-4 py-2">2026</td>
+    </tr>
+     <tr>
+      <td class="border px-4 py-2">Sabrina Carpenter</td>
+      <td class="border px-4 py-2">Espresso</td>
+      <td class="border px-4 py-2">Alternative</td>
+      <td class="border px-4 py-2">2024</td>
+    </tr>
+  </tbody>
+</table><br>
+        </div>
+<div class="w-full max-w-150">
+  <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4"> <!--1 kolumn på mindre skärmar, 2 på större-->
+    <div class="mb-6">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="artist">
+        Artist
+      </label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="artist" id="artist" type="text" placeholder="Artist">
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="song">
+        Favoritlåt
+      </label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="song" id="song" type="text" placeholder="Favoritlåt">
+    </div>
+    <div>
+        <h3 class="font-semibold">Genre</h3>
+    <input type="checkbox" id="pop" name="pop" value="Pop">
+  <label for="pop">Pop</label><br>
+  <input type="checkbox" id="afrobeat" name="afrobeat" value="afrobeat">
+  <label for="afrobeat">Afrobeat</label><br>
+    <input type="checkbox" id="schlagerpop" name="schlagerpop" value="schlagerpop">
+  <label for="schlagerpop">Schlagerpop</label><br>
+       <input type="checkbox" id="alternative" name="alternative" value="alternative">
+  <label for="alternative">Alternative</label><br>
+    </div>
+    <div class="mb-6">
+        <label for="year" class="font-semibold">Välj årtal:</label><br>
+
+<select name="year" id="year" class="border">
+  <option value="2026">2026</option>
+  <option value="2025">2025</option>
+  <option value="2024">2024</option>
+  <option value="2023">2023</option>
+  <option value="2022">2022</option>
+  <option value="2021">2021</option>
+</select>
+       </div></div><br>
+       <div class="mb-6">
+<label for="comment" class="block font-bold mb-2">
+    Skriv varför du gillar låten.
+</label>
+<textarea id="comment" name="comment" class="border rounded w-full p-3" rows="3" placeholder="Vad tycker du om låten?"></textarea>
+       </div>
+    
+    <div class="flex items-center justify-between">
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+        Skicka
+      </button>
+      
+  
+    </div>
+  </form>
+</div>
+    
+    </div>
+</main>
+</body>
+</html>
