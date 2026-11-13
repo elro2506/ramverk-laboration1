@@ -22,7 +22,7 @@
         </li>
        
         <li class="nav-item">
-          <a class="nav-link text-white href="publicering.html>Publicering</a>
+          <a class="nav-link text-white" href="publicering.html">Publicering</a>
         </li>
       </ul>
   </div>
@@ -30,8 +30,13 @@
 <main class="container mx-auto px-3 mt-5" style="max-width: 900px;">
 <h1 class="text-primary display-3 fw-bold">Bootstrap</h1>
 <h2 class="fs-4">Om Bootstrap-ramverket</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolore. Voluptatem illo optio aliquid obcaecati illum 
-    dignissimos quaerat. Iste, soluta ex. Fugit, nihil iste illum dolor perferendis officiis inventore repudiandae?</p>
+<p>Bootstrap är ett ramverk med öppen källkod som man kan använda för att designa webbplatser, och även göra dem responsiva.
+    Det finns färdiga komponenter för exempelvis tabeller och formulär.
+</p>
+<p>Det finns skillnader mellan Bootstrap och det andra ramverket Tailwind, bland annat att Bootstrap har färdiga komponenter medan
+    Tailwind mer har klasser för mindre egenskaper.
+</p>
+<p>Du når Bootstraps webbplats på <a href="https://getbootstrap.com/">denna länk</a></p>
     <h2>Min utvärdering</h2>
     <p>Jag vet inte om det är för att jag började med Tailwind, men jag tycker Bootstrap inte är lika enkelt som Tailwind. Däremot finns det lite
         med Bootstrap som gör flödet lite enklare vid programmeringen, som att inte behöva lägga egen design varje gång man exempelvis 
@@ -40,11 +45,12 @@
     <h3>Fördelar</h3>
     <p>En fördel jag märker är att rubrikerna har färdiga storlekar på sig, och att h2 exempelvis är större än h3, precis som jag gillar.
         Jag gillar också att det automatiskt blir lite marginal nedåt efter ett p-element, något jag annars behövt använda &lt;br&gt; för annars.
+        Men precis som med Tailwind, så har Bootstrap bra dokumentation på sin hemsida gällande sina funktioner.
     </p>
     <h3>Nackdelar</h3>
     <p>Om jag jämför arbetssättet mellan Tailwind (som jag började med) och Bootstrap, så var det jobbigt att få en enhetlig navingeringsmeny
         då värdena inte konverterades på likadant sätt. Jag sökte på nätet efter hur värdena kunde räknas men även om ett gap på 4 i Tailwind lades
-        som ett gap på 40px i Bootstrap så blev det ändå inte likadant. Jag är dock nybörjare på dessa ramverk så jag tänker att det kanske
+        som ett gap på 24px i Bootstrap så blev det ändå inte likadant. Jag är dock nybörjare på dessa ramverk så jag tänker att det kanske
         blir enklare framöver att få rätt på detta.
     </p>
 
@@ -89,7 +95,50 @@
       <td>2024</td>
     </tr>
   </tbody>
-</table>
+</table><br>
+<h3>Lägg till din favoritlåt!</h3><br>
+<form class="mb-4 bg-secondary-subtle p-3">
+  <div class="row g-4">
+    <div class="col-md-6">
+    <label for="artist" class="form-label">Artist</label>
+    <input type="text" class="form-control" name="artist" id="artist" aria-describedby="artist" placeholder="Artist">
+  </div>
+  <div class="col-md-6">
+    <label for="song" class="form-label">Favoritlåt</label>
+    <input type="text" class="form-control" name="song" id="song" placeholder="Favoritlåt">
+  </div>
+  <div class="col-md-6">
+    <label class="form-label d-block">Genre</label>
+
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" name="genre" id="pop">
+    <label class="form-check-label" for="pop">Pop</label><br>
+    <input type="checkbox" class="form-check-input" name="genre" id="afrobeat">
+    <label class="form-check-label" for="afrobeat">Afrobeat</label><br>
+    <input type="checkbox" class="form-check-input" name="genre" id="schlagerpop">
+    <label class="form-check-label" for="schlagerpop">Schlagerpop</label><br>
+    <input type="checkbox" class="form-check-input" name="genre" id="alternative">
+    <label class="form-check-label" for="alternative">Alternative</label>
+  </div>
+  </div>
+  <div class="col-md-6">
+    <label for="year" class="form-label">Välj årtal</label>
+  <select class="form-select" aria-label="Default select example" name="year" id="year">
+  <option value="2026" selected>2026</option>
+  <option value="2025">2025</option>
+  <option value="2024">2024</option>
+  <option value="2023">2023</option>
+  <option value="2022">2022</option>
+  <option value="2021">2021</option>
+</select>
+  </div>
+</div>
+<div class="mb-3 mt-4">
+  <label for="comment" class="form-label">Skriv varför du gillar låten</label>
+  <textarea class="form-control" name="comment" id="comment" rows="3" placeholder="Vad tycker du om låten?"></textarea>
+</div>
+  <button type="submit" class="btn btn-primary">Skicka</button>
+</form>
 </main>
     
   </body>
