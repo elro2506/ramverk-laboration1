@@ -6,15 +6,15 @@
     <title>Start</title>
     <link rel="stylesheet" href="main.css">
 </head>
-<body>
+<body class="min-h-screen flex flex-col"> <!--För jag vill ha footern längst ner-->
     <nav class="bg-red-800 text-white p-5 flex flex-wrap gap-5 md:gap-10 items-center">
-        <a href="index.html"><img src="start.svg" class="max-w-10" alt="Tailwinds logotyp"></a>
+        <a href="index.html"><img src="start.svg" class="w-10" alt="Tailwinds logotyp"></a>
         <a href="index.html" class="font-semibold">Start</a>
         <a href="tailwind.html">Tailwind</a>
         <a href="bootstrap.html">Bootstrap</a>
         <a href="publicering.html">Publicering</a>
     </nav>
-    <main class="max-w-225 mx-auto px-5">
+    <main class="max-w-225 mx-auto px-5 w-full flex-1"> <!--Hör ihop med inställningarna i body-->
     <h1 class="text-blue-800 text-3xl font-semibold md:text-6xl mb-10 mt-10">Startsida</h1>
     
     <p class="text-2xl">Kul att du hittat hit!</p>
@@ -23,18 +23,18 @@
         kunna hitta manualer som hjälper mig att utveckla mina kunskaper kring dessa.
     </p>
     <p class="mt-5 mb-10">Läs gärna mer om mina utvärderingar för respektive ramverk genom att klicka på boxarna nedan.</p>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-4 justify-items-center max-w-[660px] mx-auto">
-        <a href="tailwind.html" class="flex flex-col items-center justify-center w-fill max-w-80 border-4 p-4 border-blue-800 bg-red-100 rounded-lg hover:bg-red-800">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-4 justify-items-center max-w-[660px] mx-auto">
+        <a href="tailwind.html" class="flex flex-col items-center justify-center w-full max-w-80 aspect-square border-4 p-4 border-blue-800 bg-red-100 rounded-lg hover:bg-red-800">
   <img src="tailwind.png" alt="Tailwinds logo" class="align-items-center w-50">
   <p class="font-bold text-2xl">Tailwind</p>
   </a>
-<a href="bootstrap.html" class="flex flex-col items-center justify-center size-80 border-4 p-4 border-blue-800 bg-red-100 rounded-lg hover:bg-red-800">
+<a href="bootstrap.html" class="flex flex-col items-center justify-center w-full max-w-80 aspect-square border-4 p-4 mb-10 border-blue-800 bg-red-100 rounded-lg hover:bg-red-800">
     <img src="Bootstrap_logo.svg" alt="Bootstraps logo" class="w-50">
     <p class="font-bold text-2xl">Bootstrap</p>
   </a>
     </div>
 </main>
-<footer class="bg-red-800 p-4 mt-10 text-white fixed bottom-0 left-0 z-20 w-full">
+<footer class="bg-red-800 p-4 mt-auto text-white">
     <p>Laboration 1</p>
     <p>Elin Ronda</p>
                 </footer>
