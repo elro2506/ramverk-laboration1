@@ -5,15 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/main.css --watch"
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/main.css --watch",
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/main.css --minify"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@tailwindcss/cli": "^4.3.5",
     "@tailwindcss/vite": "^4.3.5",
     "tailwindcss": "^4.3.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.5"
   }
 }
